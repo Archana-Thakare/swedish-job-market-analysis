@@ -1,0 +1,27 @@
+version: 2
+
+models:
+
+  - name: stg_jobs
+    description: "Cleaned and deduplicated job postings"
+
+    columns:
+
+      - name: job_id
+        description: "Unique job identifier"
+
+        tests:
+          - unique
+          - not_null
+
+      - name: title
+        description: "Normalized job title"
+
+      - name: publication_date
+        description: "Date the job was published"
+
+  - name: mart_skill_demand
+    description: "Job postings enriched with extracted skill indicators"
+
+  - name: mart_skill_counts
+    description: "Aggregated counts of skill demand across job postings"
