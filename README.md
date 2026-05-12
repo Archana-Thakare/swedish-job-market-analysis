@@ -65,6 +65,32 @@ The data was then loaded into a DuckDB database for SQL-based querying and trans
 
 ---
 
+# Dashboard Preview
+
+## Main Dashboard
+
+![Dashboard Home](assets/screenshots/dashboard_home.png)
+
+## Top Skills Analysis
+
+![Top Skills](assets/screenshots/top_skills.png)
+
+## Jobs by City
+
+![Jobs by City](assets/screenshots/jobs_by_city.png)
+
+## Word Cloud
+
+![Word Cloud](assets/screenshots/wordcloud.png)
+
+## Jobs Posting over Time
+
+![Jobs by City](assets/screenshots/job_posting_over_time.png)
+
+## Skill_Demand_by_Roll
+
+![Skill_Demand_by_Roll](assets/screenshots/skill_demand_by_roll.png)
+
 # Approach
 
 ## Data Pipeline
