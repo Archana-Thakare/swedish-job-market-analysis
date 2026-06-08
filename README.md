@@ -67,9 +67,7 @@ The data was then loaded into a DuckDB database for SQL-based querying and trans
 
 # Dashboard Preview
 
-## Main Dashboard
 
-![Dashboard Home](assets/screenshots/dashboard_home.png)
 
 ## Top Skills Analysis
 
