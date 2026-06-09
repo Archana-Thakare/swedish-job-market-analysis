@@ -308,7 +308,7 @@ Configure the DuckDB connection
 
 Locate ~/.dbt/profiles.yml
 
-The path should point to your job_market.duckdb file
+The path in profiles.yml should point to your job_market.duckdb file
 
 
 Verify the connection:
