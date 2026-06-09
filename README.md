@@ -170,7 +170,6 @@ The transformed data was aggregated into analytical marts for dashboard reportin
 
 ## Development Tools
 
-* Git
 * GitHub
 * PowerShell
 * Virtual Environments (venv)
@@ -243,7 +242,7 @@ Additional enhancements could improve both analytical accuracy and dashboard usa
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/swedish-job-market-analysis.git
+git clone https://github.com/Archana-Thakare/swedish-job-market-analysis.git
 cd swedish-job-market-analysis
 ```
 
@@ -287,7 +286,45 @@ This will:
 
 ---
 
-## 5. Run dbt Transformations
+## 5. Configure dbt
+
+cd dbt_project
+dbt init job_market
+Choose:
+1. duckdb
+
+Create a dbt profile named:
+
+```text
+job_market
+```
+
+and point it to:
+
+```text
+data/duckdb/job_market.duckdb
+```
+Configure the DuckDB connection
+
+Locate ~/.dbt/profiles.yml
+
+The path should point to your job_market.duckdb file
+
+
+Verify the connection:
+
+```bash
+cd dbt_project/job_market
+```
+
+```bash
+dbt debug
+```
+
+---
+
+
+## 6. Run dbt Transformations
 
 Navigate to the dbt project:
 
@@ -315,7 +352,7 @@ dbt docs generate
 
 ---
 
-## 6. Run Analysis Scripts
+## 7. Run Analysis Scripts
 
 From the project root:
 
@@ -325,7 +362,9 @@ python src/analysis/analyze_jobs.py
 
 ---
 
-## 7. Launch the Streamlit Dashboard
+## 8. Launch the Streamlit Dashboard
+
+From the repository root:
 
 ```bash
 python -m streamlit run streamlit_app/app.py
@@ -351,13 +390,16 @@ swedish-job-market-analysis/
 │
 ├── src/
 │   ├── api/
-│   ├── analysis/
-│   └── processing/
+|       └──fetch_jobs.py
+│   └── analysis/
+        └──analyze_jobs.py
+│   
 │
 ├── dbt_project/
 │   └── job_market/
 │
 ├── streamlit_app/
+|   └──app.py
 │
 ├── requirements.txt
 ├── README.md
