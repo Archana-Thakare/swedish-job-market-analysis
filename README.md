@@ -1,4 +1,6 @@
 # Swedish Job Market Analysis
+A data pipeline and analytics dashboard for analyzing skill demand trends in the Swedish data science job market using the JobTech API.
+
 
 ## Problem Statement
 
@@ -13,10 +15,24 @@ The demand for data professionals continues to grow rapidly across industries. U
 * Recruiters understand market trends
 * Companies benchmark hiring demand
 * Analysts explore the Swedish tech ecosystem
-
 This project builds a complete end-to-end data pipeline that collects Swedish job listings, transforms and analyzes the data, and presents insights through an interactive dashboard.
 
 ---
+## Tech Stack
+
+- Python
+- Requests
+- DuckDB
+- Pandas
+- dbt
+- Streamlit
+- Plotly
+
+## Goals
+
+- Collect Swedish job listings
+- Analyze demand for data science skills
+- Visualize trends in an interactive dashboard
 
 # Data Source
 
